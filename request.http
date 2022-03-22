@@ -1,0 +1,65 @@
+GET http://localhost:4000/api/
+
+###
+
+GET http://localhost:4000/api/articles?page=4
+
+###
+
+GET http://localhost:4000/api/articles/4
+
+###
+
+DELETE http://localhost:4000/api/articles/9
+
+###
+
+PUT http://localhost:4000/api/articles/4
+content-type: application/json
+
+{
+      "featured": false,
+      "title": "Spacex news message",
+      "url": "https://spaceflightnow.com/2021/12/04/falcon-9-ixpe-static-fire/",
+      "image_url": "https://spaceflightnow.com/wp-content/uploads/2021/12/f9ixpestatic2.jpg",
+      "news_site": "Spaceflight Now",
+      "summary": "SpaceX completed a static fire test of a Falcon 9 rocket Saturday at NASA’s Kennedy Space Center in preparation for a launch Dec. 9 with the space agency’s Imaging X-ray Polarimetry Explorer science mission.",
+      "published_at": "2021-12-05T04:36:00Z",
+          "events": [],
+    "launches": [
+      {
+        "id": 2,
+        "provider": "Launch Library 2"
+      },
+      {
+        "id": 4,
+        "provider": null
+      }
+    ]
+    }
+
+###
+
+POST http://localhost:4000/api/articles
+content-type: application/json
+
+{
+  "featured": false,
+  "title": "Novo titulo",
+  "url": "http://www.url.com.br",
+  "image_url": "http://www.urlnovo.com.br/images/icon.png",
+  "news_site": "http://www.url.com.br",
+  "summary": "Nova mensagem",
+  "published_at": "2021-12-05T19:11:47Z",
+  "events": [
+    {
+      "provider": " event event 19"
+    }
+  ],
+  "launches": [
+    {
+
+      "provider": "provider launch launch 22"
+    }
+  ]
+}
