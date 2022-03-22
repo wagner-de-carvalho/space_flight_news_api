@@ -12,7 +12,7 @@ Para executar o projeto, precisa-se que tenha instalado:
 ### 🔧 Instalação do projeto
 - Baixar o projeto do Github:
 `
-    git clone https://github.com/wagner-de-carvalho/spaceflightnewsapi
+    git clone https://github.com/wagner-de-carvalho/space_flight_news_api
 `
 - Baixar as dependências:
 Dentro da pasta do projeto executar:
